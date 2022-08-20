@@ -1,0 +1,26 @@
+body {
+    background-color: rgb(155, 220, 224);
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    margin: 2rem;
+    font-weight: 500;
+}
+
+.sub-container {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid rgb(70, 65, 65);
+    width: 80%;
+    margin: 2% auto;
+    text-align: center;
+
+}
+
+p {
+    font-weight: 800;
+}

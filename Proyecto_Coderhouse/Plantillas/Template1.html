@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='{% static "/style.css" %}' rel='stylesheet' type='text/css' media = 'screen'/>
+    <title>Familia</title>
+</head>
+<body>
+
+    <h1>Datos de parientes</h1>
+    
+      {% for familiar in familiares %}
+      
+      <div class = sub-container>
+
+            <h2> <p>Nombre </p> {{ familiar.nombre }} </h2>
+            <h2> <p>Apellido </p> {{ familiar.apellido }} </h2>
+            <h2> <p>Parentesco </p> {{ familiar.parentesco }} </h2>
+            <h2> <p>Edad </p> {{ familiar.edad }} </h2>
+            <h2> <p>Fecha de cumpleaños </p>{{ familiar.cumpleanios }} </h2>
+            <h2> <p>Ocupación </p>{{ familiar.ocupacion }} </h2>
+
+      </div>      
+
+      {% endfor %}
+
+
+</body>
+</html>
